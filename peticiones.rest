@@ -1,0 +1,34 @@
+@host = http://localhost:3000
+
+GET {{host}}/api/students
+
+###
+
+GET {{host}}/api/students/1
+
+###
+
+POST {{host}}/api/students
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "age": 20,
+    "email": "john.doe@example.com",
+    "phone": "1234567890",
+    "addres": "123 Main St, Anytown, USA"
+}
+
+###
+
+PUT {{host}}/api/students/6720e4c1050e71a00bafcceb
+Content-Type: application/json
+
+{
+    "name": "Enzo"
+}
+
+###
+
+DELETE {{host}}/api/students/1
+
